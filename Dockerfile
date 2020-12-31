@@ -11,4 +11,4 @@ RUN curl -L ${HELM_3_URL} | tar xvz && \
     rm -rf linux-amd4
 
 COPY entrypoint.sh /entrypoint.sh
-CMD ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

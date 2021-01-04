@@ -10,7 +10,7 @@ RUN curl -L ${HELM_3_URL} | tar xvz && \
     chmod +x /usr/bin/helm && \
     rm -rf linux-amd4
 
-RUN curl -L -o /usr/bin/kubectl ${KUBECTL_URL} \
+RUN curl -L -o /usr/bin/kubectl ${KUBECTL_URL} && \
     chmod +x /usr/bin/kubectl
 
 COPY entrypoint.sh /entrypoint.sh

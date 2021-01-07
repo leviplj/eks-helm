@@ -1,6 +1,6 @@
 FROM alpine:3.12.3
 
-ARG HELM_3_URL="https://get.helm.sh/helm-v3.0.2-linux-amd64.tar.gz"
+ARG HELM_3_URL="https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/v1.18.12/bin/linux/amd64/kubectl"
 
 RUN apk add py-pip curl
